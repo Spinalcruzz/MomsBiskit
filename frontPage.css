@@ -1,0 +1,25 @@
+body{
+    background-color: white; ;
+    background-repeat:no-repeat;
+    background-size: 100%;
+}
+.mainTitle{
+    font-size:x-large;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(226, 94, 76);
+}
+.container{
+    border: 1px solid rgb(245, 96, 96);
+    padding: 5px;
+    border-radius: 8px;
+    width: fit-content;
+    box-shadow: 3px 3px 10px gray;
+}
+.productTitle{
+    background-color: rgb(226, 94, 76); 
+    width: fit-content;
+    color: rgb(252, 245, 249);
+    padding: 5px;
+}

@@ -1,25 +1,56 @@
 body{
-    background-color: white; ;
-    background-repeat:no-repeat;
+    background-color: rgb(255, 251, 251); ;
     background-size: 100%;
+    margin: 0;
 }
-.mainTitle{
-    font-size:x-large;
-    font-family: "Anton", sans-serif;
-    font-weight: bold;
-    font-style: normal;
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
     color: rgb(226, 94, 76);
+    margin: 3px;
+    background-color: rgba(237, 241, 241, 0.568);
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    color: whitesmoke
+    
 }
 .container{
-    border: 1px solid rgb(245, 96, 96);
     padding: 5px;
     border-radius: 8px;
     width: fit-content;
+    height: max-content;
     box-shadow: 3px 3px 10px gray;
 }
-.productTitle{
-    background-color: rgb(226, 94, 76); 
+.contactTitle{
+    background-color: rgb(231, 117, 102); 
     width: fit-content;
     color: rgb(252, 245, 249);
     padding: 5px;
+    border-radius: 3px;
+}
+.productDescription{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    background-color:rgb(202, 77, 61) ;
+    color:whitesmoke;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: 5px;
+
+}
+#holdcontainer{
+    gap: 10px;
+    display:flex;
+    justify-content: center;
+}
+.top-heading{
+    background-color:  rgb(202, 77, 61); 
+    padding: 10px;
+    width: 100%;
+    
+}
+@media screen { 
+    #holdcontainer{
+        width:100%
+    }
 }

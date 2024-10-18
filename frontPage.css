@@ -41,9 +41,32 @@ h2{
     margin-left: 5px;
 
 }
-#holdcontainer{
-    gap: 10px;
+.formDescription{
+    background-color: rgb(231, 120, 110);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    color:whitesmoke;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: 5px;
+
+}
+.formDescription1{
+    background-color: rgb(231, 120, 110);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    color:whitesmoke;
+    padding: 5px;
+    border-radius: 3px;
+    width: fit-content;
+    margin-left: 5px;
+}
+.textWarning{
+    color: rgb(105, 23, 23) ;
+}
+#imgContainer{
     display:flex;
+    margin: auto;
+    gap: 10px;
     justify-content: center;
 }
 .top-heading{
@@ -94,4 +117,27 @@ input{
     padding: 5px;
     width: fit-content;
     border-radius: 3px;
+}
+
+
+@media  screen and (max-width: 600px) {
+    #imgContainer{
+        display:grid;
+        margin: auto;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+    .productDescription1{
+        margin: 0;
+    }
+    .formDescription{
+        margin: 0;
+    }
+    .formDescription1{
+        margin:0;
+    }
+    .textWarning{
+        margin: 0;
+    }
 }

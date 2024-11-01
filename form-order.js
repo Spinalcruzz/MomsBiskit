@@ -1,7 +1,5 @@
 let clientInfo = []
             
-            
-       
 
 function submitBtn() {
  
@@ -9,13 +7,13 @@ function submitBtn() {
     const amount = batchAmount.value; 
             
         
-     clientInfo.push(amount);
+    clientInfo.push(amount);
      
      const productDescription = document.querySelector('.productDescription');
      const description = productDescription.value;
 
 
-     clientInfo.push(description);
+    clientInfo.push(description);
       
     const clientContact = document.querySelector('.clientContact');
     const contact = clientContact.value;
@@ -29,5 +27,11 @@ function submitBtn() {
     
     
 
-     console.log(clientInfo)
+    if ( amount || description || contact || email != "" ) {
+        const clientOrderInfo = document.querySelector('.clientOrderInfo').innerHTML =`Batch Amount ${clientInfo[0]} , Product Description of ${clientInfo[1]} ,we will contact ${clientInfo[2]} and Send an email to ${clientInfo[3]}`;
+    } else {
+         document.querySelector('.clientOrderInfo').innerHTML = `Please fill in the Form!`
     }
+    
+}
+

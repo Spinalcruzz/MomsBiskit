@@ -1,3 +1,5 @@
+
+
 body{
     background-color: rgb(255, 251, 251); ;
     background-size: 100%;
@@ -10,7 +12,7 @@ h1{
 }
 h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
-    color: whitesmoke
+    color:rgb(233, 228, 229);
     
 }
 .container{
@@ -25,11 +27,14 @@ h2{
     transform: translateY(-5px);
 }
 .contactTitle{
-    background-color: rgb(231, 117, 102); 
+    background-color: rgb(233, 107, 91); 
     width: fit-content;
     color: rgb(252, 245, 249);
     padding: 5px;
     border-radius: 3px;
+}
+li{
+    list-style-type: none;
 }
 .productDescription1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular';
@@ -70,7 +75,7 @@ h2{
     justify-content: center;
 }
 .top-heading{
-    background-color:  rgb(235, 63, 63); 
+    background-color: rgb(231, 120, 110);
     padding: 10px;
     width: 100%;
     
@@ -118,6 +123,13 @@ input{
     width: fit-content;
     border-radius: 3px;
 }
+.clientOrderInfo{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(235, 63, 63);
+    color: whitesmoke;
+
+}
 
 
 @media  screen and (max-width: 600px) {
@@ -139,5 +151,12 @@ input{
     }
     .textWarning{
         margin: 0;
+    }
+    .clientOrderInfo{
+        display: grid;
+        justify-content: center;
+        background-color: rgb(235, 63, 63);
+        color: whitesmoke;
+        margin: auto;
     }
 }

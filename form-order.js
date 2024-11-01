@@ -25,13 +25,18 @@ function submitBtn() {
 
     clientInfo.push(email);
     
-    
-
-    if ( amount || description || contact || email != "" ) {
-        const clientOrderInfo = document.querySelector('.clientOrderInfo').innerHTML =`Batch Amount ${clientInfo[0]} , Product Description of ${clientInfo[1]} ,we will contact ${clientInfo[2]} and Send an email to ${clientInfo[3]}`;
+     if ( amount != Number ) {
+        if (description != "") {
+            if (contact != "") {
+                if (email != "") {
+                    const clientOrderInfo = document.querySelector('.clientOrderInfo').innerHTML =`Batch Amount ${clientInfo[0]} , Product Description of ${clientInfo[1]} ,we will contact ${clientInfo[2]} and Send an email to ${clientInfo[3]}`;
+                }
+            }
+        }
     } else {
-         document.querySelector('.clientOrderInfo').innerHTML = `Please fill in the Form!`
+        document.querySelector('.clientOrderInfo').innerHTML = 'Please Fill In The Form!'
     }
-    
+
+   
 }
 
